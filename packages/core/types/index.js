@@ -552,7 +552,6 @@ export interface MutableAsset extends BaseAsset {
   +symbols: MutableAssetSymbols;
 
   isASTDirty(): boolean;
-  /** Returns <code>null</code> if there is no AST. */
   getAST(): Promise<?AST>;
   setAST(AST): void;
   setBuffer(Buffer): void;
@@ -568,9 +567,6 @@ export interface MutableAsset extends BaseAsset {
  * @section transformer
  */
 export interface Asset extends BaseAsset {
-  /** Throws if there is no AST.*/
-  getAST(): Promise<?AST>;
-
   +stats: Stats;
 }
 
