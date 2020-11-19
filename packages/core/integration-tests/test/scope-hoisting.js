@@ -2313,8 +2313,8 @@ describe('scope hoisting', function() {
             '/integration/scope-hoisting/es6/side-effects-false-wrap-excluded/a.js',
           ),
         );
-        let output = await run(b);
 
+        let output = await run(b);
         assert.deepEqual(output, 4);
       });
 
